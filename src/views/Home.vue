@@ -19,6 +19,7 @@
         </div>
       </div>
       <div class="col-md-6">
+<<<<<<< HEAD
         <country-search />
       </div>
     </div>
@@ -32,6 +33,20 @@
         <b-btn to="examples" size="lg" variant="secondary" class="shadow" block >
           View The Example Gallery
         </b-btn>
+=======
+        <b-card title="Demo Country Search">
+          <p class="card-text">
+            Type a country:
+          </p>
+          <vue-bootstrap-typeahead
+            :data="countries"
+            v-model="cntrySearch"
+            :serializer="s => s.name"
+            placeholder="Canada, United States, etc..."
+            @hit="selectedCountry = $event"
+          />
+        </b-card>
+>>>>>>> Add keyboard navigation
       </div>
     </div>
     <div class="row">
